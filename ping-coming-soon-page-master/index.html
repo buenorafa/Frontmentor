@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3d7bf636a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <main id="main">
+        <div class="logo">
+            <img class="img-logo" src="./images/logo.svg" alt="Ping Logo">
+        </div>
+        <div class="text">
+            <h1 class="title">We are launching <span>soon!</span></h1>
+            <p class="subtitle">Subscribe and get notified</p>
+        </div>
+        <form id="form" action="#">
+            <div id="email-field">
+                <input type="text"
+                        name="email" 
+                        id="email-input" 
+                        placeholder="Your email address..."
+                        value=""
+                >
+                <small id="error-msg"></small>
+            </div>
+            <button type="submit" id="submit-btn">Notify Me</button>
+        </form>
+        <img id="dashboard-img" src="./images/illustration-dashboard.png" alt="A dashboard illustration">
+    </main>
+    <footer id="footer">
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#" class="nav-link"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" class="nav-link"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" class="nav-link"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+        <span>&copy; Copyright Ping. All rights reserved.</span>
+    </footer>
+</body>
+</html>
