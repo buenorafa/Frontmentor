@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+ 
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.969rem;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+}
+.card {
+    width: 320px;
+    height: 497px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 .5em var(--grayish-blue);
+    background-color: var(--white);   
+}
+.text {
+    width: 270px;
+    text-align: center;
+}
+.title {
+    color: var(--dark-blue);
+}
+.subtitle {
+    color: var(--grayish-blue);
+}
+.card-img {
+    width: 290px;
+    margin-top: 17px;
+    border-radius: 10px;
+}
+/* GITHUB LINK */
+span {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 5px;
+}
+span a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+span a:hover {
+    border-bottom: 1px dotted var(--dark-blue);
+}
