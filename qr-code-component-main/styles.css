@@ -36,6 +36,7 @@ main {
 }
 .title {
     color: var(--dark-blue);
+    font-size: 1.49rem;
 }
 .subtitle {
     color: var(--grayish-blue);
