@@ -1,0 +1,95 @@
+:root {
+    /* PRIMARY */
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /* NEUTRAL */
+    --white: hsla(0, 0%, 100%, 0.75);
+    --gray: hsl(0, 0%, 95%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    margin: 5.867rem 1.667rem;
+}
+main {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hidden {
+    display: none;
+}
+/* CARD */
+.card {
+    padding: 3.2rem;
+    max-width: 21.667rem;
+    line-height: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* CARD STYLE */
+img,
+h2 {
+    margin-bottom: 2.667rem;
+}
+img {
+    display: block;
+}
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    color: var(--gray);
+}
+p {
+    color: var(--white);
+    margin-bottom: 1.867rem;
+}
+/* BACKGROUND & COLOR */
+.bg-orange {
+    background-color: var(--orange);
+    color: var(--orange);
+}
+.bg-dark-cyan {
+    background-color: var(--dark-cyan);
+    color: var(--dark-cyan);
+}
+.bg-very-dark-cyan {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-dark-cyan);
+}
+/* HOVER STATES */
+a {
+    position: relative;
+    bottom: 0;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    color: inherit;
+    background-color: var(--white);
+    border: 2px solid transparent;
+    border-radius: 2rem;
+}
+a:hover {
+    color: var(--gray);
+    border: 2px solid var(--gray);
+    background-color: transparent;
+}
+
+@media  screen and (min-width: 735px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }   
+    p {
+        margin-bottom: 6rem;
+    }
+}
